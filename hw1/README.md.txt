@@ -1,0 +1,1 @@
+This homework contains the python script for displaying the # of sentences of Trump and Clinton in September 2016
