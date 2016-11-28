@@ -14,6 +14,7 @@ Installation
 
 - Make sure you have Python 2.7 (and the pip package manager).
 - I also have Python 3.5 version in the other folder titled "Python35"
+  - This homework was originally written in Python 3.5 environment. I changed several syntaxes to adjust it to Python 2.7. Please pardon me if there are still some syntaxes that I failed to fix.
 
 You also need to install some requirements:
 
