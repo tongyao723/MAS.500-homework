@@ -4,7 +4,7 @@ Flask Example - MediaCloud Client App
 Small example Flask applicaton for the MAS.500 course (the beginner homework).
 - Forked Rahul's MediaCloud Flask example: https://github.com/rahulbot/MediaCloud-Flask-Example
 - Added inputs for picking a start and end date to search within 
-  The default start/end dates are 09/01/2015, 04/01/2016
+  - The default start date is 09/01/2015, the default end date is 04/01/2016
 - Changed the example to use the sentenceCount API method with "split" set to true, so it returns counts by week
 - Used Highcharts.js to render the weekly results as a line chart
 
