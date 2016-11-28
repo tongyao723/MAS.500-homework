@@ -12,8 +12,8 @@ Small example Flask applicaton for the MAS.500 course (the beginner homework).
 Installation
 ------------
 
-Make sure you have Python 2.7 (and the pip package manager).
-I also have Python 3.5 version in the other folder titled "Python35"
+- Make sure you have Python 2.7 (and the pip package manager).
+- I also have Python 3.5 version in the other folder titled "Python35"
 
 You also need to install some requirements:
 
