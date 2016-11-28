@@ -50,7 +50,7 @@ def search_results():
     else:
         date_interval = "Week "
     date_interval = "Sentence Count Every " + date_interval 
-    print
+ 
     results = mc.sentenceCount(keywords,
         solr_filter=[mc.publish_date_query( start_datetime, 
                                              end_datetime ),
