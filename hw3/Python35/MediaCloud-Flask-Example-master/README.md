@@ -15,11 +15,6 @@ Installation
 - Make sure you have Python 3.5 (and the pip package manager).
 - I also have Python 2.7 version in the other folder titled "Python27"
 
-Installation
-------------
-
-Make sure you have Python 3.5 (and the pip package manager).
-
 You also need to install some requirements:
 
 ```
