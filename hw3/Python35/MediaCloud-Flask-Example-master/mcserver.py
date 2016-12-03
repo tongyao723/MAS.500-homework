@@ -64,13 +64,14 @@ def search_results():
     for key in results['split'].keys():
         sorted_keys.append(key)
     sorted_keys.sort()
+    #sorted_keys = results['split'].keys()
 
     for key in sorted_keys:
         if key != "gap" and key != "end" and key != "start":
             values.append(results['split'][key])
             categories.append(key[:10])
 
-
+    #translate to a format that is compatible with JavaScript
     category_string = ""
     value_string = ""
     for ii in range(len(categories)):
