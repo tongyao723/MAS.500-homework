@@ -1,0 +1,62 @@
+var countries = ['usa', 'china', 'russia', 'saudi arabia', 'france', 'uk', 'germany', 'japan', 'india', 'south korea'];
+
+var d = [1747, 640, 188, 87.8, 67, 61.2, 57.9, 48.8, 48.6, 47.4, 33.9];
+
+//var chart = d3.select('#chart');
+//var circles = chart.selectAll('circle')
+//    .data(d);
+//circles.enter().append("circle")
+//    .attr("class","chart-circle")
+//    .attr("cy", 40)
+//    .attr("cx", function (d, i) {return i * 40 + 50;})
+//    .attr("r", function (d, i) {return d / 50;});
+
+
+//reference link:https://www.dashingd3js.com/svg-text-element
+//Circle Data Set
+var circleData = [
+  {"countries":'usa',"data":1747,"color" : "blue" },
+  {"countries":'china',"data":640,"color" : "red" },
+  {"countries":'russia',"data":188,"color" : "purple" },
+  {"countries":'saudi arabia',"data":87.8,"color" : "purple" },
+  {"countries":'france',"data":67,"color" : "purple" },
+  {"countries":'uk',"data":61.2,"color" : "purple" },
+  {"countries":'germany',"data":57.9,"color" : "purple" },
+  {"countries":'japan',"data":48.8,"color" : "purple" },
+  {"countries":'india',"data":48.6,"color" : "purple" },
+  {"countries":'south korea',"data":47.4,"color" : "purple" },
+  {"countries":'usa',"data":33.9,"color" : "purple" }
+
+  ];
+
+//Create the SVG Viewport
+var svgContainer = d3.select("#chart").attr("width",1200)
+                                     .attr("height",200);
+
+//Add circles to the svgContainer
+var circles = svgContainer.selectAll("circle")
+                           .data(circleData)
+                           .enter()
+                           .append("circle");
+
+//Add the circle attributes
+var circleAttributes = circles
+                       .attr("cx", function (d, i) {return i * 80 + 50;})
+                       .attr("cy", 60)
+                       .attr("r", function (d, i) {return d.data/50;})
+                       .style("fill", function (d) { return d.color; });
+
+//Add the SVG Text Element to the svgContainer
+var text = svgContainer.selectAll("text")
+                        .data(circleData)
+                        .enter()
+                        .append("text");
+
+//Add SVG Text Element Attributes
+var textLabels = text
+                 .attr("x", function (d, i) {return i * 80 + 40;})
+                 .attr("y", 20)
+                 .text( function (d) { return d.countries; })
+                 .attr("font-family", "sans-serif")
+                 .attr("font-size", "12px")
+                 .attr("fill", "red");
